@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.css'
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Vision from "../assets/icons/vision.svg"
+import Mision from "../assets/icons/mision.svg"
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="w-1/2 px-7 py-8 rounded-2xl text-white space-y-4"
+              className="w-1/2 px-7 py-8 rounded-2xl text-white space-y-6"
             >
               <div className="w-full h-auto">
                 <h1 className="font-primary text-2xl">
@@ -58,15 +59,16 @@ export default function Home() {
                 <p className="mt-3">En Mr. Oso, no solo preparamos sándwiches, creamos experiencias culinarias que te transportan directamente a las calles de Perú. Cada bocado es un viaje de sabores, una explosión de ingredientes frescos y auténticos que capturan la esencia de nuestra rica gastronomía.</p>
                 <p>En Mr. Oso, nos apasiona utilizar ingredientes de la más alta calidad, seleccionados cuidadosamente para garantizar que cada sándwich sea una experiencia inolvidable. Nuestro pan, horneado diariamente, es el lienzo perfecto para nuestros rellenos, que incluyen jugosos cortes de carne, pollo marinado en especias peruanas, y vegetales frescos que aportan un toque de frescura y color.</p>
               </div>
-              <div className="w-full flex xl:flex-row flex-col">
-                <div>
-                  <div>
-                    <img src={Vision} width={120} height={120} className="mx-auto"/>
-                  </div>
+              <div className="w-full flex xl:flex-row flex-col gap-5">
+                <div className="space-y-4 xl:w-1/2 w-full flex flex-col items-center">
+                  <Image src={Mision} width={100} height={110} className="mx-auto" />
                   <h2 className="text-amarillo font-primary text-lg">Misión</h2>
+                  <p className="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quidem, error laborum, quo deserunt voluptates earum aperiam aliquam porro ad atque cupiditate quia dicta autem est amet voluptatum, minima alias?</p>
                 </div>
-                <div>
+                <div className="space-y-4 xl:w-1/2 w-full flex flex-col items-center">
+                  <Image src={Vision} width={100} height={120} className="mx-auto" />
                   <h2 className="text-amarillo font-primary text-lg">Visión</h2>
+                  <p className="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias repellat eius earum veritatis dolor laboriosam deserunt distinctio molestiae ut dolorem sunt quas aspernatur, modi tenetur esse recusandae vel beatae consequatur?</p>
                 </div>
               </div>
             </motion.div>
