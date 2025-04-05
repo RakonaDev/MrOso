@@ -8,7 +8,7 @@ import { MdOutlineMail } from "react-icons/md";
 export default function Footer() {
   return (
     <>
-      <footer className="w-full py-10 bg-amarillo_oscuro">
+      <footer className="w-full py-10 bg-amarillo_footer">
         <Container>
           <div className="flex justify-between">
             <section className="w-1/3">

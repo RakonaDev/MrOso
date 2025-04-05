@@ -10,6 +10,7 @@ import Cafe from "../assets/productos/cafe.webp"
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.css'
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import Vision from "../assets/icons/vision.svg"
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           pagination={{
             clickable: true,
           }}
-          
+
         >
           <SwiperSlide>
             <Image src={InicioBanner} alt="banner" height={500} className="w-full object-cover h-screen brightness-50" layout="fullWidth" />
@@ -48,13 +49,26 @@ export default function Home() {
               initial={{ opacity: 0, x: -200 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="w-1/2 px-7 py-8 rounded-2xl text-white"
+              className="w-1/2 px-7 py-8 rounded-2xl text-white space-y-4"
             >
-              <h1 className="font-primary text-2xl">
-                ¿ Quiénes <span className="text-amarillo">Somos ?</span>
-              </h1>
-              <p className="mt-3">En Mr. Oso, no solo preparamos sándwiches, creamos experiencias culinarias que te transportan directamente a las calles de Perú. Cada bocado es un viaje de sabores, una explosión de ingredientes frescos y auténticos que capturan la esencia de nuestra rica gastronomía.</p>
-              <p>En Mr. Oso, nos apasiona utilizar ingredientes de la más alta calidad, seleccionados cuidadosamente para garantizar que cada sándwich sea una experiencia inolvidable. Nuestro pan, horneado diariamente, es el lienzo perfecto para nuestros rellenos, que incluyen jugosos cortes de carne, pollo marinado en especias peruanas, y vegetales frescos que aportan un toque de frescura y color.</p>
+              <div className="w-full h-auto">
+                <h1 className="font-primary text-2xl">
+                  ¿ Quiénes <span className="text-amarillo">Somos ?</span>
+                </h1>
+                <p className="mt-3">En Mr. Oso, no solo preparamos sándwiches, creamos experiencias culinarias que te transportan directamente a las calles de Perú. Cada bocado es un viaje de sabores, una explosión de ingredientes frescos y auténticos que capturan la esencia de nuestra rica gastronomía.</p>
+                <p>En Mr. Oso, nos apasiona utilizar ingredientes de la más alta calidad, seleccionados cuidadosamente para garantizar que cada sándwich sea una experiencia inolvidable. Nuestro pan, horneado diariamente, es el lienzo perfecto para nuestros rellenos, que incluyen jugosos cortes de carne, pollo marinado en especias peruanas, y vegetales frescos que aportan un toque de frescura y color.</p>
+              </div>
+              <div className="w-full flex xl:flex-row flex-col">
+                <div>
+                  <div>
+                    <img src={Vision} width={120} height={120} className="mx-auto"/>
+                  </div>
+                  <h2 className="text-amarillo font-primary text-lg">Misión</h2>
+                </div>
+                <div>
+                  <h2 className="text-amarillo font-primary text-lg">Visión</h2>
+                </div>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 200 }}
@@ -73,7 +87,7 @@ export default function Home() {
           <section className="w-full flex gap-5 items-center justify-between">
             <div className="w-1/2">
               <h4 className="font-primary tracking-wide text-lg">Café <span className="text-amarillo_oscuro">en taza</span></h4>
-              <p className="mt-3">El café es una experiencia sensorial que va más allá de una simple bebida. Es un ritual, un compañero, un momento de placer y energía.</p>
+              <p className="mt-3 font-medium">El café es una experiencia sensorial que va más allá de una simple bebida. Es un ritual, un compañero, un momento de placer y energía.</p>
             </div>
             <div className="w-1/2 flex justify-center overflow-hidden">
               <Image src={Cafe} alt="cafe" width={500} height={500} className="object-cover" />

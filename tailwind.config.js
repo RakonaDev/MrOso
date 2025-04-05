@@ -13,7 +13,8 @@ export default {
       colors: {
         amarillo: '#F6CF30',
         oscuro: '#0D0D0D',
-        amarillo_oscuro: '#D5B32C'
+        amarillo_footer: '#D5B32C',
+        amarillo_oscuro: '#9b7c00'
       }
     },
   },
