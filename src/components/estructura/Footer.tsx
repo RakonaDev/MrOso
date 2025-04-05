@@ -19,6 +19,7 @@ export default function Footer() {
               <ul className="text-black text-sm space-y-4">
                 <li className="cursor-pointer font-secondary text-lg">Inicio</li>
                 <li className="cursor-pointer font-secondary text-lg">Nosotros</li>
+                <li className="cursor-pointer font-secondary text-lg">Nuestros Productos</li>
                 <li className="cursor-pointer font-secondary text-lg">Contacto</li>
               </ul>
             </section>

@@ -17,7 +17,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full fixed top-0 font-primary bg-gray-500 py-2 shadow-lg z-50">
+      {/** bg-gray-500 */}
+      <header className="w-full fixed top-0 font-primary bg-[#36454F] py-2 shadow-lg z-50">
         <Container>
           <main className="flex justify-between items-center">
             <Image src={Logo} alt="logo" width={scroll ? 80 : 140} height={scroll ? 80 : 140} className="transition-all duration-300 ease-in-out" />
