@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import Container from "../utils/Container";
 import { FaXTwitter } from "react-icons/fa6";
 import { Image } from "@unpic/react";
@@ -28,16 +28,21 @@ export default function Footer() {
                 <li className="cursor-pointer flex gap-2 items-center">
                   <span className="font-medium flex gap-2 items-center">
                     <MdOutlineMail size={20} />
-                    Email: 
+                    Email:
                   </span>
                   <a href="#">ventas@mroso.com</a>
                 </li>
-                <li className="cursor-pointer">
-                  <span className="font-medium">Telefono: </span>
+                <li className="cursor-pointer flex gap-2 items-center">
+                  <span className="font-medium flex gap-2 items-center">
+                    <FaPhoneAlt size={19} />
+                    Telefono: </span>
                   <a href="#">+51 943 107 126</a>
                 </li>
-                <li className="cursor-pointer">
-                  <span className="font-medium">Dirección: </span>
+                <li className="cursor-pointer flex gap-2 items-center">
+                  <span className="font-medium flex gap-2 items-center">
+                    <FaMapMarkerAlt size={20} />
+                    Dirección:
+                  </span>
                   <a href="#">Av. Presidente Hayes, 15, Perú</a>
                 </li>
               </ul>
