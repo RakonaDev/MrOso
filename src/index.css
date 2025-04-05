@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Primary-font';
+  src: url('/fonts/primary.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Secondary-font';
+  src: url('/fonts/secondary.ttf') format('truetype');
+  font-style: normal;
+}
